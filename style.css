@@ -234,7 +234,7 @@ main {
 
 .line2 {
   border: solid 1px black;
-  width: 7%;
+  width: 10%;
   text-align: right;
   margin-left: 81%;
 }
@@ -245,21 +245,82 @@ main {
 
 .plan {
   display: flex;
-  margin-top: 170px;
+  margin-top: 100px;
   margin-bottom: 170px;
   justify-content: center;
+  background-image: url(img/IMG_9778.jpg);
+  background-position: center;
+  padding: 100px;
 }
 
-.swagplan {}
+.bkRG {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
 
-h3 {}
-.no {}
+
+
+.swagplan {
+  margin: 0 45px;
+}
+
+.h3tittle {
+  font-family: 游明朝;
+  font-size: 5rem;
+  margin-top: 100px;
+}
+.no {
+  color: #fff;
+  border-bottom: solid 1px
+}
+
 .tateline {}
-.menu {}
-.contents {}
+.menu {
+  color: #fff;
+  font-family: 游明朝;
+  font-size: 1.5rem;
+}
+
+.contents {
+  color: #fff;
+  font-family: 游明朝;
+  font-size: 0.75rem;
+}
 
 
+/*******************************************************************/
+.contact {}
+.contact h4{
+  font-size: 4rem;
+  font-family: 游明朝;
+  margin-bottom: 70px;
+}
+.line3 {}
 
+/******************************************************************/
+.plofile {
+  display: flex;
+  margin-top: 250px;
+  justify-content: center;
+}
 .plofile img {
-  width: 60%;
+  width: 30%;
+}
+.name {
+  margin-left: 100px;
+  padding-top: 55px;
+}
+.name p{
+  font-family: 游明朝;
+}
+.insta {}
+
+
+/*************************************************************************/
+
+footer{
+  margin-top: 140px;
+}
+h5{
+  font-family: 游明朝;
 }
