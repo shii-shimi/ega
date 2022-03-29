@@ -1,3 +1,40 @@
+@charset "utf-8";
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定*/
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background:#333;
+  text-align:center;
+  color:#fff;
+  display: none;
+  top: 0;
+}
+
+/* Loading画像中央配置*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定*/
+#splash_logo img {
+  width:100px;
+}
+
+
+/****************************************************************/
+
+
+
+
 
 #menuToggle
 {
@@ -139,6 +176,12 @@ main {
 }
 
 
+
+
+
+
+
+
 /**************************************************************/
 .top {
   text-align: center;
@@ -171,20 +214,54 @@ main {
   width: 57%;
   object-fit: cover;
   height: 580px;
+  margin-left: 65px;
 }
 
 .line {
-  margin-top: 40%;
+  margin-top: 56%;
   border: solid 1px black;
   border-bottom: transparent;
   border-left: transparent;
   border-top: transparent;
-  height: 363px;
+  height: 321px;
+  margin-left: 40px;
+  margin-right: 14px;
 }
 
-.com {
-    display: flex;
-}
+
+/* fadeUp */
+
+
+.fadeUp{
+  display: flex;
+  animation-name:fadeUpAnime;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+
+
+/****************************************/
+  
 
 .midashi {
     writing-mode: vertical-rl;
@@ -324,3 +401,65 @@ footer{
 h5{
   font-family: 游明朝;
 }
+
+
+/* ------------------------------------------------------------------------------------------------------------
+    /* モバイル向けスタイル */
+
+    @media screen and (max-width: 540px) {
+
+      .tittle {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8%;
+        left: 54%;
+        font-family: 游明朝;
+        font-size: 2rem;
+      }
+
+      .compseptimg {
+        width: 100%;
+        object-fit: cover;
+        height: 276px;
+        margin-bottom: 100px;
+    }
+
+    .compsept {
+       display: initial;
+    }
+    
+    .line {
+      margin-top: 17%;
+      height: 273px;
+    }
+
+    .naiyou2 {
+      writing-mode: vertical-rl;
+      font-family: 游明朝;
+      padding: 24px;
+    }
+
+    .naiyou {
+      margin-left: 30px;
+    }
+
+    .plan {
+      display: flow-root; 
+      margin-top: 65px;
+      padding: 21px; 
+    }
+
+    .swagplan {
+      margin: 87px 45px;
+    }
+
+    .name {
+      margin-left: 33px;
+      padding-top: initial;
+    }
+
+    .plofile img {
+      width: 50%;
+  }
+
+    }
