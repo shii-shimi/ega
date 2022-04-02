@@ -194,6 +194,10 @@ main {
   position: relative;
 }
 
+.moba {
+  display: none;
+}
+
 .tittle {
   transform: rotate(45deg);
   position: absolute;
@@ -522,11 +526,39 @@ h5{
         font-size: 2rem;
       }
 
-      .compseptimg {
+      .moba {
+        display: initial;
+        
         width: 100%;
-        object-fit: cover;
-        height: 276px;
+      }
+
+      .top {
+        position: relative;
+      }
+      .top::before{
+        content: '';
+        position: absolute;
+        transform: rotate(43deg);
+        width: 275px;
+        height: 162px;
+        background-color: #fff;
+        top: -46px;
+        right: -128px;
+     }
+
+      .topimg {
+        display: none;
+      }
+
+      .compseptimg {
+        width: 92%;
+        /* object-fit: cover; */
+        height: 100%;
         margin-bottom: 100px;
+        /* margin-right: 80px; */
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
     }
 
     .compsept {
@@ -534,14 +566,16 @@ h5{
     }
     
     .line {
-      margin-top: 17%;
-      height: 273px;
+      margin-top: 12%;
+      height: 174px;
+      margin-left: 14px;
     }
 
     .naiyou2 {
       writing-mode: vertical-rl;
       font-family: 游明朝;
-      padding: 24px;
+      padding: 24px 0;
+      font-size: 0.75rem;
     }
 
     .naiyou {
@@ -566,5 +600,15 @@ h5{
     .plofile img {
       width: 50%;
   }
+
+  .fadeUpTrigger {
+    opacity: 0;
+    justify-content: center;
+    margin: 40px auto;
+  }
+
+  .midashi {
+    margin-left: 0;
+}
 
     }
